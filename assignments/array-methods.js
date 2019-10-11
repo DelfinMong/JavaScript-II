@@ -104,7 +104,27 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+   
+   let faster = []; 
+   let run = runners.forEach( item => faster.push(item.email + '   ' + item.shirt_size ))
+   console.log(faster);
 
 // Problem 2
 
+  let myEmail = [];
+  let mail = runners.map( emails => myEmail.push(`${emails.email}`));
+  console.log(myEmail);
+  console.log(mail);
+
 // Problem 3
+
+   let runnersDistance  = [
+     {1:1, distance: 3.0},
+     {1:2, distance: 3.4},
+     {1:3, distance: 5.0},
+   ];
+
+   let distanceRun = runnersDistance.reduce((accumulator, reach) => accumulator + reach.distance,0);
+
+   console.log(distanceRun)
+ 

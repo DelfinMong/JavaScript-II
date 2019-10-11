@@ -78,6 +78,6 @@ const counterFactory = () => {
 
 const newNum = counterFactory();
 
-console.log(newNum);
-console.log(newNum);
-console.log(newNum);
+console.log(newNum());
+console.log(newNum());
+console.log(newNum());
